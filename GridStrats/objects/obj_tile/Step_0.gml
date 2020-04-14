@@ -1,3 +1,9 @@
-#region Tile Generation
+if(global.debugMode) //If Paused
+{
+	
+}
+else
+{
+	
+}
 
-#endregion

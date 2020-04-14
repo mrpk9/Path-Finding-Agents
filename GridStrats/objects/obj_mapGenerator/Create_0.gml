@@ -1,4 +1,5 @@
-
+global.gamePause = false;
+selectable = false;
 enum tileType {
 	dirt,
 	stone,
@@ -30,6 +31,12 @@ show_debug_message( "Seed: " + string(random_get_seed()) );
 
 
 #region World Generation
+
+show_debug_message("Generating Path Grid");
+#region Path Finding Grid Generator
+global.grid = mp_grid_create(0, 0, TILE_COLUMNS, TILE_ROWS, global.TILE_SIZE, global.TILE_SIZE);
+#endregion
+show_debug_message("Generating Paths Complete");
 
 show_debug_message("Generating Tiles");
 	#region Creating Tiles
@@ -79,13 +86,7 @@ for(var row = 0; row < TILE_ROWS; row++)
 #endregion
 show_debug_message("Generation Completed");
 
-show_debug_message("Generating Paths");
-	#region Path Finding Grid Generator
 
-global.grid = mp_grid_create(0, 0, TILE_COLUMNS, TILE_ROWS, global.TILE_SIZE, global.TILE_SIZE);
-
-#endregion
-show_debug_message("Generating Paths Complete");
 
 show_debug_message("Now Linking Tiles");
 	#region Linking Tiles	

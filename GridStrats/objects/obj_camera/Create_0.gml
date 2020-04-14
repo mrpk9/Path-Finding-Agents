@@ -13,3 +13,4 @@ followObject = noone;
 boundless = false;
 view_w = camera_get_view_width(view_camera[0]);
 view_h = camera_get_view_width(view_camera[0]);
+selectable = false;

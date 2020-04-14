@@ -1,7 +1,6 @@
 #region Debug Handeling
 
 #region Toggle Debug
-global.pressR = keyboard_check_released(ord("R"));
 if(global.pressR && global.debugMode == false)
 {
 	global.debugMode = true;	

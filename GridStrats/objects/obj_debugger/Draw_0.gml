@@ -6,11 +6,12 @@ if(global.debugMode = true)
 	draw_set_valign(fa_top);
 	draw_set_font(fnt_debug);
 	
-	/*
-	with(obj_player11)
+	
+	
+	with(obj_NPC)
 	{
-		scr_printDebugVariables(obj_player11.debug);	
+		scr_printDebugVariables(obj_NPC.debug);	
 	}
 	
-	*/
+	
 }
