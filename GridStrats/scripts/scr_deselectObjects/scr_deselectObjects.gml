@@ -1,11 +1,16 @@
 ///scr_deselectObjects(ds_list)
+function scr_deselectObjects(argument0) {
 
-if(ds_exists(argument0, ds_type_list) && !(ds_list_empty(argument0)))
-{
-	for(var i = 0; i < ds_list_size(argument0); i++)
+	if(ds_exists(argument0, ds_type_list) && !(ds_list_empty(argument0)))
 	{
-		var currentEntity = ds_list_find_value(argument0,i);
-		currentEntity.selected = false;
+		for(var i = 0; i < ds_list_size(argument0); i++)
+		{
+			var currentEntity = ds_list_find_value(argument0,i);
+			currentEntity.selected = false;
+		}
+		ds_list_clear(selectedObjects); //Clear List
 	}
-	ds_list_clear(selectedObjects); //Clear List
+
+
+
 }

@@ -1,8 +1,12 @@
 {
-    "id": "93b66b83-7512-471e-972c-e3d0a4d22499",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_printGridRow",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Print",
+    "path": "folders/Scripts/Print.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_printGridRow",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "273e38d8-b655-47de-b161-35dc87471c4f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_printList",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Print",
+    "path": "folders/Scripts/Print.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_printList",
+  "tags": [],
+  "resourceType": "GMScript",
 }

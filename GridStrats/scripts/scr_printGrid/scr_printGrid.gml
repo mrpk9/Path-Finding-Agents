@@ -1,16 +1,20 @@
 ///scr_printGrid(ds_grid ID)
-/*
-	This script prints out an entire grid. 
+function scr_printGrid(argument0) {
+	/*
+		This script prints out an entire grid. 
 
-*/
+	*/
 
-var result = "";
-if(ds_exists(argument0, ds_type_grid))
-{
-	for(var row = 0; row < ds_grid_height(argument0); row++)
+	var result = "";
+	if(ds_exists(argument0, ds_type_grid))
 	{
-		result += string(scr_printGridRow(argument0, row));
-		result += "#";
+		for(var row = 0; row < ds_grid_height(argument0); row++)
+		{
+			result += string(scr_printGridRow(argument0, row));
+			result += "#";
+		}
 	}
+	return result;
+
+
 }
-return result;
